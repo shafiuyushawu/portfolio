@@ -61,7 +61,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [Portfolio] <a name="about-project"></a>
 
-A personal portfolio website that describes the qualities of me as a Software Engineere,
+A personal portfolio website that describes the qualities of me as a Software Engineer,
 the technologies I am familiar with. The web page is still in it youthful stage starting mobile version.
 
 ## 🛠 Built With <a name="built-with">HTML & CSS</a>
