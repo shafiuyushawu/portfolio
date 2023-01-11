@@ -3,7 +3,6 @@
 body {
   padding: 0;
   margin: 0;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,7 +27,7 @@ nav {
 }
 
 .nav__logo a {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   color: #fff5e1;
   text-decoration: none;
   display: flex;
@@ -63,16 +62,14 @@ main {
 
 .profile__title {
   margin-left: 5px;
-  font-family: 'Crete Round' sans-serif;
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 35px;
-  width: 300px;
   padding-top: 30px;
   margin-top: 50px;
   width: 327px;
   letter-spacing: 0.37rem;
-
   color: #ff6b00;
 }
 
@@ -84,7 +81,6 @@ main {
   margin-top: -50px;
   width: 327px;
   font-weight: 300;
-
   color: #fff5e1;
 }
 
@@ -93,13 +89,12 @@ main {
   margin-left: 5px;
   width: 327px;
   height: 123px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 18px;
   line-height: 24px;
   letter-spacing: 0.03rem;
-
   color: #fff;
 }
 
