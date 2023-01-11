@@ -30,8 +30,6 @@ After you're finished please remove all the comments and instructions!
   <!-- <img src="" alt="logo" width="140"  height="auto" /> -->
   <br/>
 
-  <h3><b>Microverse README Template</b></h3>
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -205,7 +203,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[N/A]**
+- [ ] **[My recent works page: Includes projects built.]**
+- [ ] **[About me page: contain get resume button, skills, programming languages and frameworks ]**
+- [ ] **[Feedback page: which consist a form to get in touch ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
