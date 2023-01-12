@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  max-width: 375px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3c3a39;
+  padding: 10px;
+}
+
+.nav__logo {
+  width: 77px;
+  height: 24px;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 18px;
+}
+
+.nav__logo a {
+  font-family: 'Roboto', sans-serif;
+  color: #fff5e1;
+  text-decoration: none;
+  display: flex;
+}
+
+.nav__hamburger {
+  padding-right: 10px;
+}
+
+.nav__hamburger img {
+  width: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile__section {
+  background: #1c1a19;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 375px;
+  max-height: 100vh;
+  padding: 10px;
+  height: 600px;
+  background-image: url('./images/back_img.png');
+  background-repeat: no-repeat;
+  background-position: top 230px right;
+}
+
+.profile__title {
+  margin-left: 5px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  padding-top: 30px;
+  margin-top: 50px;
+  width: 327px;
+  letter-spacing: 0.37rem;
+  color: #ff6b00;
+}
+
+.profile__job-title {
+  margin-left: 10px;
+  display: flex;
+  font-size: 22px;
+  line-height: 32px;
+  margin-top: -50px;
+  width: 327px;
+  font-weight: 300;
+  color: #fff5e1;
+}
+
+.profile__title-detail {
+  margin-top: -20px;
+  margin-left: 5px;
+  width: 327px;
+  height: 123px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.03rem;
+  color: #fff;
+}
+
+.profile__social-icons {
+  display: flex;
+  width: 327px;
+}
+
+.profile__social-icons ul {
+  list-style: none;
+  display: flex;
+  padding: 10px;
+}
+
+.profile__social-icons ul li {
+  padding: 10px;
+}
