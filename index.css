@@ -121,6 +121,7 @@ main {
 /* project section  */
 .project__section {
   width: 372;
+  display: grid;
   background: #fff;
   display: flex;
   flex-direction: column;
