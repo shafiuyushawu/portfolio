@@ -1,4 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Roboto:wght@300&display=swap');
 
 /* Body section  */
 body {
@@ -23,14 +25,13 @@ nav {
 .nav__logo {
   width: 77px;
   height: 24px;
-  font-family: 'Roboto', sans-serif;
   display: flex;
   justify-content: flex-start;
   font-size: 18px;
 }
 
 .nav__logo a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #fff5e1;
   text-decoration: none;
   display: flex;
@@ -119,6 +120,7 @@ main {
 
 /* project section  */
 .project__section {
+  width: 372;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -136,7 +138,9 @@ main {
   height: 80px;
   font-family: 'Crete Round', sans-serif;
   font-weight: 200;
-  font-size: 25px;
+  font-size: 40px;
+  margin-left: 30px;
+  color: #1c1a19;
 }
 
 .project__title-bar {
@@ -160,7 +164,7 @@ main {
   height: 36px;
   font-family: 'Crete Round', sans-serif;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 32px;
   color: #091e42;
 }
 
@@ -172,6 +176,7 @@ main {
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
+  color: #091e42;
 }
 
 .project__button {
@@ -191,11 +196,13 @@ main {
 }
 
 .project__button-select {
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #8993a4;
   padding: 10px;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
   background: none;
   font-weight: 300;
+  color: #091e42;
 }
 
 .see__project-button {
@@ -222,7 +229,7 @@ main {
   display: flex;
   flex-direction: column;
   background: #fff;
-  align-items: center;
+  align-items: flex-start;
   width: 375;
 }
 
@@ -232,10 +239,10 @@ main {
 }
 
 .professional__project-title {
-  margin-top: 100px;
+  margin-top: 80px;
   width: 289px;
-  font-family: 'Crete Round', sans-serif;
-  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
   margin-left: 20px;
   color: #fff;
   line-height: 40px;
@@ -259,6 +266,7 @@ main {
 .profession__project-butons {
   display: flex;
   width: 327px;
+  justify-content: flex-start;
 }
 
 .profession__project-butons ul {
@@ -268,9 +276,12 @@ main {
 
 .profession__project-butons ul li a {
   padding: 10px;
+  width: 236px;
+  height: 40px;
 }
 
 .professional__button-select {
+  font-family: 'Inter', sans-serif;
   background: rgba(255, 255, 255, 0.24);
   border-color: #fff;
   color: #fff;
@@ -280,6 +291,7 @@ main {
 }
 
 .professional__see-project {
+  font-family: 'Inter', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +301,7 @@ main {
   color: #fff;
   border: 1px solid #f55800;
   font-size: 18px;
-  font-weight: 300px;
+  font-weight: 700px;
 }
 
 .professional__see-project:hover {
@@ -302,7 +314,7 @@ main {
 /* about me page  */
 .aboutme {
   width: 375;
-  height: 2100px;
+  height: 750px;
   display: flex;
   flex-direction: column;
   background: #1c1a19;
@@ -316,23 +328,23 @@ main {
 
 .aboutme__title {
   width: 327px;
-  height: 79;
   font-family: 'Crete Round', sans-serif;
-  font-size: 40px;
+  font-size: 100px;
   letter-spacing: 0.37;
   color: #ff6b00;
-  margin-bottom: -20px;
+  font-weight: 400;
 }
 
 .aboutme__description {
+  margin-top: -150px;
   display: flex;
   flex-direction: column;
   width: 327px;
-  height: 148px;
   font-family: 'Inter', sans-serif;
   color: #fff;
   line-height: 24px;
   margin-bottom: 30px;
+  font-size: 16px;
 }
 
 .aboutme__button {
@@ -353,7 +365,8 @@ main {
   color: #fff;
   font-size: 17px;
   letter-spacing: 0.3;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
   border: 1px solid #f55800;
 }
 
@@ -385,11 +398,12 @@ main {
 }
 
 .aboutme__details {
-  display: grid;
-  flex-direction: row;
-  flex-direction: column;
+  padding-top: 70px;
+  width: 375;
+  background: #1c1a19;
   color: #fff;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -398,14 +412,12 @@ main {
   grid-template-columns: 30px 200px;
   grid-gap: 10px;
   padding: 10px;
+  text-align: center;
+  font-family: 'InaiMathi', sans-serif;
 }
 
 .item2 {
   font-size: 35px;
-}
-
-.aboume__details-header h1 {
-  font-size: 40px;
 }
 
 .aboutme__details ul li {
@@ -413,6 +425,7 @@ main {
   display: flex;
   font-size: 20px;
   padding: 15px;
+  font-family: 'Inter', sans-serif;
 }
 
 .feedback {
