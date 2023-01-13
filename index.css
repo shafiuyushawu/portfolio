@@ -221,94 +221,91 @@ main {
   background: #fff5e1;
   color: #f55800;
   font-weight: 400;
-  border: 3px solid #f55800;
+  border: 1px solid #f55800;
 }
 
 /* Professional project section  */
 .professional__project {
-  display: flex;
-  flex-direction: column;
-  background: #fff;
-  align-items: flex-start;
-  width: 375;
+  background-image: url('./images/section_2.png');
+  width: 327px;
+  height: 386px;
+  margin-bottom: 50px;
 }
 
-.professional__project-1 {
-  height: 386px;
-  background-image: url('./images/section_2.png');
+.professional__project-container {
+  display: flex;
+  flex-direction: column;
+  width: 327px;
+  margin-top: 80px;
+  padding: 10px;
 }
 
 .professional__project-title {
-  margin-top: 80px;
-  width: 289px;
-  font-family: 'Inter', sans-serif;
-  font-size: 25px;
-  margin-left: 20px;
+  width: 295px;
+  font-size: 400;
+  font-size: 32px;
+  font-family: 'Crete Round', sans-serif;
   color: #fff;
-  line-height: 40px;
 }
 
 .professional__project-detail {
-  display: flex;
-  flex-direction: column;
-  width: 327px;
-}
-
-.professional__project-detail p {
-  color: #fff;
   font-family: 'Inter', sans-serif;
-  height: 872;
+  width: 295px;
+  font-size: 16px;
+  color: #fff;
   line-height: 24px;
-  display: flex;
-  margin: 20px;
 }
 
 .profession__project-butons {
-  display: flex;
-  width: 327px;
-  justify-content: flex-start;
+  display: grid;
+  width: 295;
 }
 
-.profession__project-butons ul {
+.profession__project-butons {
   list-style: none;
   display: flex;
 }
 
-.profession__project-butons ul li a {
-  padding: 10px;
-  width: 236px;
-  height: 40px;
+.profession__project-butons a {
+  text-decoration: none;
+  padding-right: 20px;
+  justify-content: space-around;
 }
 
-.professional__button-select {
-  font-family: 'Inter', sans-serif;
+.profession__project-butons a button {
+  padding: 10px;
   background: rgba(255, 255, 255, 0.24);
-  border-color: #fff;
-  color: #fff;
-  padding: 7px;
-  margin-top: -20px;
   border: none;
+  color: #fff;
+  width: 80px;
+  height: 40px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .professional__see-project {
-  font-family: 'Inter', sans-serif;
+  margin-top: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 48px;
   width: 327px;
+  height: 48px;
   background: #ff6b00;
   color: #fff;
-  border: 1px solid #f55800;
-  font-size: 18px;
-  font-weight: 700px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-stretch: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  border: 1px solid #ff6b00;
 }
 
 .professional__see-project:hover {
   background: #fff5e1;
   color: #f55800;
   font-weight: 400;
-  border: 1px solid #f55800;
 }
 
 /* about me page  */
