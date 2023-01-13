@@ -256,17 +256,7 @@ main {
   line-height: 24px;
 }
 
-.profession__project-butons {
-  display: grid;
-  width: 295;
-}
-
-.profession__project-butons {
-  list-style: none;
-  display: flex;
-}
-
-.profession__project-butons a {
+.profession__project-butons ul li a {
   text-decoration: none;
   padding-right: 20px;
   justify-content: space-around;
