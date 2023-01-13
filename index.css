@@ -121,9 +121,8 @@ main {
 /* project section  */
 .project__section {
   width: 372;
-  display: grid;
-  background: #fff;
   display: flex;
+  background: #fff;
   flex-direction: column;
   align-items: center;
   justify-content: center;
