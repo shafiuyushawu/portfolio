@@ -434,7 +434,7 @@ main {
 }
 
 .contactme__details {
-margin-top: 100px;
+  margin-top: 100px;
   width: 327px;
   height: 216px;
   font-size: 32px;
@@ -468,8 +468,8 @@ form {
 
 .contactme__input::placeholder {
   font-weight: 800;
-    line-height: 24px;
-    font-size: 15px;
+  line-height: 24px;
+  font-size: 15px;
 }
 
 .contactme__textarea {
@@ -481,11 +481,12 @@ form {
   font-weight: 400;
   height: 114px;
 }
-.contactme__textarea::placeholder{
-    color: #172b4d;
-    font-weight: 800;
-    line-height: 24px;
-    font-size: 15x;
+
+.contactme__textarea::placeholder {
+  color: #172b4d;
+  font-weight: 800;
+  line-height: 24px;
+  font-size: 15px;
 }
 
 .contactme__textarea:focus {
@@ -502,7 +503,6 @@ form {
   font-family: 'Inter', sans-serif;
   margin-left: 110px;
   align-items: center;
-
 }
 
 .contactme__submit-button:hover {
@@ -521,7 +521,7 @@ footer {
 }
 
 .footer__container {
-  border-top: 1px solid #DFE1E6;
+  border-top: 1px solid #dfe1e6;
   width: 327px;
   margin-top: 100px;
   padding-top: 20px;
@@ -532,7 +532,6 @@ footer {
   list-style-type: none;
   display: flex;
   justify-content: center;
-
 }
 
 .footer__container ul li {
