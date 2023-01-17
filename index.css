@@ -462,7 +462,7 @@ main {
 }
 
 .contactme__textarea {
-  border:none;
+  border: none;
   padding: 20px;
   background: #fbf8f7;
   font-size: 15px;
@@ -500,7 +500,6 @@ footer {
   width: 375px;
   background: #fff;
   align-items: center;
-  
 }
 
 .footer__container {
