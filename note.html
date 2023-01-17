@@ -1,0 +1,158 @@
+<section class="feedback">
+    <div class="feedback__content">
+        <div class="feedback_details">
+            <p>
+                I'm always interested in hearing <br>
+                about new projects, <br>
+                so if you'd like to <br>
+                chat please get in touch.
+            </p>
+        </div>
+    </div>
+    <div class="feedback__content">
+        <div class="feedback__formgroup">
+            <input class="feedback__input" type="text " placeholder="Full Name" required>
+        </div>
+        <br>
+        <div class="feedback__formgroup">
+            <input class="feedback__input" type="email " placeholder="Email" required>
+        </div>
+        <br>
+        <textarea class="feedback__textarea" name="" id="" cols="30" rows="10" placeholder="Enter text here"
+            required></textarea>
+        <br>
+        <button class="feedback__submit-button" type="submit"> Get In Touch</button>
+    </div>
+
+</section>
+
+<footer>
+    <div class="footer__container">
+        <ul>
+            <li>
+                <a href="#">
+                    <img src=".//images//footer/github.png" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images//footer/linkedin_1.png" alt="no internet">
+                    <img src="./images//footer/linkedin_2.png" alt="no internet">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/footer/finger.png" alt="no internet">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images/footer/twitter.png" alt="no internt">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./images//footer/mail.png" alt="no internt">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+.feedback {
+width: 375;
+height: 850px;
+display: flex;
+flex-direction: column;
+background: #ffff;
+align-items: center;
+text-align: center;
+}
+
+.feedback__content {
+display: flex;
+flex-direction: column;
+width: 327px;
+margin-bottom: 120px;
+}
+
+.feedback_details {
+width: 327px;
+height: 216px;
+font-size: 32px;
+line-height: 44px;
+text-align: center;
+color: #172b4d;
+font-weight: 700;
+font-family: 'Inter', sans-serif;
+}
+
+.feedback__formgroup {
+width: 327px;
+border-bottom: 1px solid #dbd8d7;
+}
+
+.feedback__input {
+width: 300px;
+border: none;
+padding: 20px;
+font-size: 15px;
+font-family: 'Inter', sans-serif;
+}
+
+.feedback__input:focus {
+outline: none;
+}
+
+.feedback__textarea {
+border: none;
+background: #fbf8f7;
+padding: 20px;
+font-size: 15px;
+font-family: 'Inter', sans-serif;
+}
+
+.feedback__textarea:focus {
+outline: none;
+}
+
+.feedback__submit-button {
+border: 1px solid #f55800;
+border: none;
+width: 150px;
+padding: 20px;
+background: #ff6b00;
+color: #fff;
+font-weight: 300;
+font-size: 18px;
+margin-left: 80px;
+}
+
+.feedback__submit-button:hover {
+background: #fff5e1;
+color: #f55800;
+font-weight: 400;
+border: 1px solid #f55800;
+}
+
+/* footer page */
+footer {
+display: flex;
+flex-direction: column;
+width: 375;
+background: #fff;
+align-items: center;
+}
+
+footer .footer__container {
+border-top: 1px solid #505f79;
+width: 327px;
+}
+
+footer .footer__container ul {
+width: 250px;
+list-style: none;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
