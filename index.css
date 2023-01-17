@@ -434,14 +434,19 @@ main {
 }
 
 .contactme__details {
+margin-top: 100px;
   width: 327px;
   height: 216px;
   font-size: 32px;
   text-align: center;
   line-height: 44px;
   color: #172b4d;
-  font-weight: 700;
+  font-weight: bolder;
   font-family: 'Inter', sans-serif;
+}
+
+form {
+  margin-top: 80px;
 }
 
 .contactme__formgroup {
@@ -461,14 +466,26 @@ main {
   outline: none;
 }
 
+.contactme__input::placeholder {
+  font-weight: 800;
+    line-height: 24px;
+    font-size: 15px;
+}
+
 .contactme__textarea {
   border: none;
   padding: 20px;
   background: #fbf8f7;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
-  color: #111;
   font-weight: 400;
+  height: 114px;
+}
+.contactme__textarea::placeholder{
+    color: #172b4d;
+    font-weight: 800;
+    line-height: 24px;
+    font-size: 15x;
 }
 
 .contactme__textarea:focus {
@@ -477,14 +494,15 @@ main {
 
 .contactme__submit-button {
   border: 1px solid #f55800;
-  width: 150px;
-  padding: 20px;
+  width: 107px;
+  height: 48px;
   background: #ff6b00;
   color: #fff;
-  font-weight: 300;
-  font-size: 18px;
+  font-size: 15px;
   font-family: 'Inter', sans-serif;
-  margin-left: 80px;
+  margin-left: 110px;
+  align-items: center;
+
 }
 
 .contactme__submit-button:hover {
@@ -503,14 +521,20 @@ footer {
 }
 
 .footer__container {
-  border-top: 1px solid #505f79;
+  border-top: 1px solid #DFE1E6;
   width: 327px;
   margin-top: 100px;
+  padding-top: 20px;
 }
 
 .footer__container ul {
   width: 250px;
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+
+}
+
+.footer__container ul li {
+  padding: 10px;
 }
