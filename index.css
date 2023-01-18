@@ -3,19 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@200;300&family=Roboto:wght@300&display=swap');
 
 /* Body section  */
+
+
 body {
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #e5e5e5;
+  display: grid;
 }
 
 /* Header section  */
+header {
+  display: grid;
+}
 nav {
   display: flex;
-  max-width: 375px;
   justify-content: space-between;
   align-items: center;
   background-color: #3c3a39;
@@ -54,54 +55,14 @@ main {
 /* profile section page */
 .profile__section {
   background: #1c1a19;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-height: 100vh;
-  padding: 10px;
-  height: 600px;
+  display: grid;
   background-image: url('./images/back_img.png');
   background-repeat: no-repeat;
   background-position: top 230px right;
 }
 
-.profile__title {
-  margin-left: 5px;
-  font-family: 'Crete Round', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
-  padding-top: 30px;
-  margin-top: 50px;
-  width: 327px;
-  letter-spacing: 0.37rem;
-  color: #ff6b00;
-}
 
-.profile__job-title {
-  margin-left: 10px;
-  display: flex;
-  font-size: 22px;
-  line-height: 32px;
-  margin-top: -50px;
-  width: 327px;
-  font-weight: 300;
-  color: #fff5e1;
-}
 
-.profile__title-detail {
-  margin-top: -20px;
-  margin-left: 5px;
-  width: 327px;
-  height: 123px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 200;
-  font-size: 13px;
-  line-height: 24px;
-  letter-spacing: 0.03rem;
-  color: #fff;
-}
 
 .profile__social-icons {
   display: flex;
