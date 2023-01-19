@@ -517,3 +517,7 @@ footer {
 .footer__container ul li {
   padding: 30px;
 }
+
+img:hover{
+  transform: scale(1.2);
+}
