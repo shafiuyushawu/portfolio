@@ -453,6 +453,10 @@ form {
   font-family: 'Inter', sans-serif;
 }
 
+input:hover, textarea:hover {
+  transform: scale(1.2);
+}
+
 .contactme__input:focus {
   outline: none;
 }
