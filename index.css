@@ -43,9 +43,9 @@ nav {
   font-size: 18px;
 }
 
- .nav__desktop{
+.nav__desktop {
   display: none;
- }
+}
 
 .nav__logo a {
   font-family: 'Inter', sans-serif;
@@ -74,9 +74,10 @@ main {
   display: grid;
   gap: 12px;
   padding: 120px 24px 120px 24px;
-  background-image: url('./images/back_img.png');
+  /* background-image: url('./images/back_img.png'); */
   background-repeat: no-repeat;
   background-position: top 230px right;
+  height: 60vh;
 }
 
 .profile__title {
@@ -132,8 +133,9 @@ main {
 }
 
 .recent__works {
-  display: grid;
-  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5%;
   padding: 150px 24px 50px 24px;
 }
 
@@ -205,14 +207,18 @@ main {
 .project__button-select {
   background: none;
   padding: 10px 20px;
-  border: 1px solid #8993a4;
+  border: 1px solid #ff6b00;
 }
 
 .see__project-button {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   display: flex;
   background: #ff6b00;
   border: none;
-  color:#dbd8d7;
+  color: #fff;
 }
 
 .see__project-button:hover {
@@ -232,14 +238,14 @@ main {
     url(../icons_copy/cardBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  /* height: 100%; */
   margin: 0 24px 0 24px;
   display: flex;
   flex-direction: column;
 }
 
 .professional__project-container {
-  padding:  25% 5% 0 5%;
+  padding: 25% 5% 0 5%;
 }
 
 .professional__project-title {
@@ -261,16 +267,14 @@ main {
 
 .profession__project-butons {
   padding: 20px 0 0 0;
-  
 }
-
 
 .professional__button-select {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   border: none;
-  margin:  0px 10px 0 0;
+  margin: 0px 10px 0 0;
   padding: 10px 10px 10px 0;
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
@@ -289,9 +293,8 @@ main {
   background: #fff5e1;
   color: #f55800;
   font-weight: 400;
-
 }
-  
+
 .professional__project-link {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
@@ -305,7 +308,6 @@ main {
   justify-content: center;
   padding: 10px;
   width: 100%;
-
 }
 .professional__project-link:hover {
   background: #fff5e1;
@@ -318,9 +320,9 @@ main {
   display: flex;
   flex-direction: column;
   background: #1c1a19;
-  background-image: url(../icons_copy/amBackground.svg) ;
+  background-image: url(../icons_copy/amBackground.svg);
   background-repeat: no-repeat;
-  background-position:right bottom ;
+  background-position: right bottom;
   padding: 0 0 40% 0;
 }
 
@@ -457,7 +459,8 @@ form {
   font-family: 'Inter', sans-serif;
 }
 
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   transform: scale(1.2);
 }
 
@@ -543,13 +546,11 @@ footer {
   padding: 30px;
 }
 
-img:hover{
+img:hover {
   transform: scale(1.2);
 }
 
-
 @media only screen and (min-width: 768px) {
-
   .nav__logo {
     font-size: 20px;
   }
@@ -557,10 +558,53 @@ img:hover{
   .nav__hamburger img {
     display: none;
   }
-  
-  .nav__desktop li {
+
+  .nav__desktop {
     display: flex;
-    flex-direction: column;
+    list-style: none;
   }
 
+  .nav__desktop-items a {
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .profile__section {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 30% 0 30%;
+  }
+
+  .profile__socials {
+    display: flex;
+    flex-direction: column;
+    background: url();
+  }
+
+  .recent__works {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .project__works {
+  }
+
+  .project__image {
+    background-size: contain;
+    padding-bottom: 30%;
+    background-position: center;
+    width: 200%;
+  }
+
+  .professional__project {
+  }
+
+  #project__grid {
+    display: flex;
+  }
+
+  #project_1 {
+    width: calc(100% / 3);
+  }
 }
