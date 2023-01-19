@@ -7,7 +7,8 @@
 body {
   padding: 0;
   margin: 0;
-  display: grid;
+  display: flex;
+  flex-grow: 1;
 }
 
 .flex__container {
@@ -123,6 +124,7 @@ main {
   gap: 30px;
   background: #fff;
   flex-direction: column;
+  padding: 0 0 80px 0;
 }
 
 .recent__works {
@@ -137,7 +139,7 @@ main {
   flex-direction: column;
   font-family: 'Crete Round', sans-serif;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 32px;
   color: #1c1a19;
 }
 
@@ -206,7 +208,7 @@ main {
   display: flex;
   background: #ff6b00;
   border: none;
-  color: #fff;
+  color:#dbd8d7;
 }
 
 .see__project-button:hover {
@@ -224,57 +226,101 @@ main {
       rgba(38, 38, 38, 0.9) 61.94%
     ),
     url(../icons_copy/cardBackground.svg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
+  margin: 0 24px 0 24px;
   display: flex;
   flex-direction: column;
-  padding: 80px 24px 80px 24px;
 }
+
+.professional__project-container {
+  padding:  25% 5% 0 5%;
+}
+
 .professional__project-title {
   font-family: 'Crete Round', sans-serif;
   font-size: 32px;
-  font-weight: 400;
   font-style: normal;
-  color: #dbd8d7;
-  line-height: 132%;
+  font-weight: 700;
+  line-height: 44px;
+  color: #fff;
 }
 
 .professional__project-detail {
   font-family: 'Inter', sans-serif;
-  font-style: normal;
   font-size: 16px;
+  font-style: normal;
+  color: #fff;
+  padding: 10% 10% 0 0;
+}
+
+.profession__project-butons {
+  padding: 20px 0 0 0;
+  
+}
+
+
+.professional__button-select {
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
-  line-height: 132%;
+  font-size: 16px;
+  border: none;
+  margin:  0px 10px 0 0;
+  padding: 10px 10px 10px 0;
+  background: rgba(255, 255, 255, 0.24);
   color: #fff;
 }
 
-.professional__see-project:hover {
-  background: #fff5e1;
-  color: #f55800;
-  font-weight: 400;
+.professional__see-project {
+  display: flex;
+  background: #f55800;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 50px;
 }
 
-#
+.professional__project-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
 
 /* about me page  */
 .aboutme {
   display: flex;
   flex-direction: column;
   background: #1c1a19;
+  background-image: url(../icons_copy/amBackground.svg) ;
+  background-repeat: no-repeat;
+  background-position:right bottom ;
+  padding: 0 0 40% 0;
 }
 
 .aboutme__container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
+  padding: 150px 24px 0 24px;
 }
 
 .aboutme__title {
   font-family: 'Crete Round', sans-serif;
-  font-size: 100px;
+  font-size: 72px;
   letter-spacing: 0.37;
   color: #ff6b00;
   font-weight: 400;
+  letter-spacing: 5px;
 }
 
 .aboutme__description {
@@ -283,21 +329,17 @@ main {
   font-family: 'Inter', sans-serif;
   color: #fff;
   line-height: 24px;
-  margin-bottom: 30px;
   font-size: 16px;
 }
 
 .aboutme__button {
-  display: flex;
-  flex-direction: column;
+  padding: 30px 0 0 0;
 }
 
 .aboutme__link {
   display: flex;
   flex-direction: column;
   background: #ff6b00;
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
   color: #fff;
   font-size: 17px;
@@ -305,6 +347,8 @@ main {
   font-weight: 700;
   font-family: 'Inter', sans-serif;
   border: 1px solid #f55800;
+  padding: 10px;
+  width: 30%;
 }
 
 .aboutme__link:hover {
@@ -358,48 +402,42 @@ main {
 
 /* Feedback page  */
 .contactme {
-  width: 375px;
-  height: 850px;
   display: flex;
   flex-direction: column;
   background: #fff;
   align-items: center;
   text-align: center;
+  padding: 100px 24px 0 24px;
 }
 
 .contactme__content {
   display: flex;
   flex-direction: column;
-  width: 327px;
-  margin-bottom: 120px;
 }
 
 .contactme__details {
-  margin-top: 100px;
-  width: 327px;
-  height: 216px;
   font-size: 32px;
-  text-align: center;
   line-height: 44px;
   color: #172b4d;
   font-weight: bolder;
   font-family: 'Inter', sans-serif;
+  justify-content: flex-start;
 }
 
 form {
-  margin-top: 80px;
+  width: 100%;
+  padding: 0 24px 0 24px;
 }
 
 .contactme__formgroup {
-  width: 327px;
   border-bottom: 1px solid #dbd8d7;
 }
 
 .contactme__input {
-  width: 300px;
   border: none;
   padding: 20px;
   font-size: 15px;
+  width: 80%;
   font-family: 'Inter', sans-serif;
 }
 
@@ -420,7 +458,6 @@ form {
   font-size: 15px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
-  height: 114px;
 }
 
 .contactme__textarea::placeholder {
@@ -456,29 +493,27 @@ form {
 footer {
   display: flex;
   flex-direction: column;
-  width: 375px;
   background: #fff;
   align-items: center;
 }
 
 .footer__container {
   border-top: 1px solid #dfe1e6;
-  width: 327px;
   margin-top: 100px;
   padding-top: 20px;
   background-image: url('../icons/footerShape.svg');
   background-position: bottom;
   background-repeat: no-repeat;
   margin-bottom: 8px;
+  width: 100%;
 }
 
 .footer__container ul {
-  width: 250px;
   list-style-type: none;
   display: flex;
   justify-content: center;
 }
 
 .footer__container ul li {
-  padding: 10px;
+  padding: 30px;
 }
