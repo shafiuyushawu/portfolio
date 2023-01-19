@@ -43,6 +43,10 @@ nav {
   font-size: 18px;
 }
 
+ .nav__desktop{
+  display: none;
+ }
+
 .nav__logo a {
   font-family: 'Inter', sans-serif;
   color: #fff5e1;
@@ -541,4 +545,22 @@ footer {
 
 img:hover{
   transform: scale(1.2);
+}
+
+
+@media only screen and (min-width: 768px) {
+
+  .nav__logo {
+    font-size: 20px;
+  }
+
+  .nav__hamburger img {
+    display: none;
+  }
+  
+  .nav__desktop li {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
