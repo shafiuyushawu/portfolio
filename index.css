@@ -192,6 +192,16 @@ main {
   justify-content: flex-start;
 }
 
+.project__buttons ul li {
+  padding-right: 10px;
+}
+
+.project__button-select {
+  background: none;
+  padding: 10px 20px;
+  border: 1px solid #8993a4;
+}
+
 .see__project-button {
   display: flex;
   background: #ff6b00;
@@ -208,10 +218,34 @@ main {
 
 /* Professional project section  */
 .professional__project {
-  /* background-image: url('./images/section_2.png'); */
-  width: 327px;
-  height: 386px;
-  margin-bottom: 50px;
+  background-image: linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0) 0.75%,
+      rgba(38, 38, 38, 0.9) 61.94%
+    ),
+    url(../icons_copy/cardBackground.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 24px 80px 24px;
+}
+.professional__project-title {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+  color: #dbd8d7;
+  line-height: 132%;
+}
+
+.professional__project-detail {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 132%;
+  color: #fff;
 }
 
 .professional__see-project:hover {
@@ -220,10 +254,10 @@ main {
   font-weight: 400;
 }
 
+#
+
 /* about me page  */
 .aboutme {
-  width: 375;
-  height: 750px;
   display: flex;
   flex-direction: column;
   background: #1c1a19;
@@ -236,7 +270,6 @@ main {
 }
 
 .aboutme__title {
-  width: 327px;
   font-family: 'Crete Round', sans-serif;
   font-size: 100px;
   letter-spacing: 0.37;
@@ -245,10 +278,8 @@ main {
 }
 
 .aboutme__description {
-  margin-top: -150px;
   display: flex;
   flex-direction: column;
-  width: 327px;
   font-family: 'Inter', sans-serif;
   color: #fff;
   line-height: 24px;
@@ -259,14 +290,11 @@ main {
 .aboutme__button {
   display: flex;
   flex-direction: column;
-  width: 327px;
 }
 
 .aboutme__link {
   display: flex;
   flex-direction: column;
-  width: 161px;
-  height: 48px;
   background: #ff6b00;
   justify-content: center;
   align-items: center;
@@ -287,8 +315,6 @@ main {
 
 .aboutme__background-image {
   display: flex;
-  width: 375px;
-  height: 250px;
   background-image: url('./images/aboutme.png');
   background-repeat: no-repeat;
   background-position: right;
@@ -296,14 +322,12 @@ main {
 
 .aboutme__separator {
   margin: 50px 0 0 0;
-  width: 375px;
   justify-content: center;
   align-items: center;
 }
 
 .aboutme__details {
   padding-top: 70px;
-  width: 375;
   background: #1c1a19;
   color: #fff;
   display: flex;
