@@ -185,7 +185,7 @@ main {
 .project__buttons {
   display: grid;
   gap: 12px;
-  color: #5b5957;
+  color: #fff;
 }
 
 .project__buttons ul {
@@ -275,11 +275,19 @@ main {
 .professional__see-project {
   display: flex;
   background: #f55800;
+  border: 1px solid #f55800;
   justify-content: center;
-  padding: 10px;
   margin-top: 50px;
+  color: #fff;
 }
 
+.professional__see-project:hover {
+  background: #fff5e1;
+  color: #f55800;
+  font-weight: 400;
+
+}
+  
 .professional__project-link {
   font-family: 'Inter', sans-serif;
   font-size: 17px;
@@ -291,10 +299,15 @@ main {
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+  width: 100%;
 
 }
-
-
+.professional__project-link:hover {
+  background: #fff5e1;
+  color: #f55800;
+  font-weight: 400;
+}
 
 /* about me page  */
 .aboutme {
@@ -405,9 +418,9 @@ main {
   display: flex;
   flex-direction: column;
   background: #fff;
-  align-items: center;
-  text-align: center;
   padding: 100px 24px 0 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactme__content {
@@ -421,21 +434,20 @@ main {
   color: #172b4d;
   font-weight: bolder;
   font-family: 'Inter', sans-serif;
-  justify-content: flex-start;
 }
 
 form {
   width: 100%;
-  padding: 0 24px 0 24px;
+  padding: 100px 0 0 0;
 }
 
-.contactme__formgroup {
+.contactme__formgroup input {
   border-bottom: 1px solid #dbd8d7;
 }
 
 .contactme__input {
   border: none;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
   font-size: 15px;
   width: 80%;
   font-family: 'Inter', sans-serif;
@@ -453,11 +465,11 @@ form {
 
 .contactme__textarea {
   border: none;
-  padding: 20px;
   background: #fbf8f7;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  width: 100%;
 }
 
 .contactme__textarea::placeholder {
@@ -471,15 +483,20 @@ form {
   outline: none;
 }
 
+.contactme__submit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contactme__submit-button {
   border: 1px solid #f55800;
-  width: 107px;
-  height: 48px;
   background: #ff6b00;
   color: #fff;
+  width: 30%;
+  padding: 10px;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
-  margin-left: 110px;
   align-items: center;
 }
 
