@@ -157,11 +157,11 @@ main {
 
 .project__title img {
   padding: 10%;
-  width: 100%;
+  width: 80%;
 }
 
 .project__image {
-  background-image: url(../icons_copy/ImgPlaceholder.svg);
+  background-image: url(./icons_copy/ImgPlaceholder.svg);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -236,7 +236,7 @@ main {
 
 /* Professional project section  */
 .professional__project {
-  background-image: url(../icons_copy/cardBackground.svg);
+  background-image: url(./icons_copy/cardBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
   margin: 0 24px 0 24px;
@@ -332,7 +332,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 150px 24px 0 24px;
+  padding: 50px 24px 0 24px;
 }
 
 .aboutme__title {
@@ -354,6 +354,7 @@ main {
 
 .aboutme__button {
   padding: 30px 0 0 0;
+  width: fit-content;
 }
 
 .aboutme__link {
@@ -368,7 +369,6 @@ main {
   font-family: 'Inter', sans-serif;
   border: 1px solid #f55800;
   padding: 10px;
-  width: 30%;
 }
 
 .aboutme__link:hover {
@@ -622,10 +622,6 @@ footer {
     display: grid;
     grid-template-columns: 40% auto;
     padding: 10% 24px 8% 24px;
-  }
-
-  .project__title img {
-    width: 90%;
   }
 
   .aboutme__description {
