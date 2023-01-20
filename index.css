@@ -20,6 +20,7 @@ body {
 header {
   display: grid;
 }
+
 h1,
 h3,
 ul,
@@ -27,6 +28,7 @@ p {
   padding: 0;
   margin: 0;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -74,17 +76,15 @@ main {
   display: grid;
   gap: 12px;
   padding: 120px 24px 120px 24px;
-  /* background-image: url('./images/back_img.png'); */
+  background-image: url('./images/back_img.png');
   background-repeat: no-repeat;
   background-position: top 230px right;
-  height: 60vh;
 }
 
 .profile__title {
   font-family: 'Crete Round', sans-serif;
   font-size: 40px;
   font-style: normal;
-  /* line-height: 64px; */
   letter-spacing: 0.37px;
   color: #f55800;
 }
@@ -105,6 +105,12 @@ main {
   font-size: 18px;
   color: #fff5e1;
   line-height: 24px;
+}
+
+.profile__title,
+.profile__sub-title,
+.profile__details {
+  padding: 0 0 15px 0;
 }
 
 .profile__social-icons {
@@ -135,8 +141,7 @@ main {
 .recent__works {
   display: flex;
   flex-direction: column;
-  gap: 0.5%;
-  padding: 150px 24px 50px 24px;
+  padding: 0 24px 0 24px;
 }
 
 .project__title {
@@ -147,12 +152,12 @@ main {
   font-weight: 200;
   font-size: 32px;
   color: #1c1a19;
+  padding: 50px 24px 50px 24px;
 }
 
-.project__title h3 {
-  border-bottom: 1px solid #212121;
-  padding: 0 0 50px 0;
-  letter-spacing: 5px;
+.project__title img {
+  padding: 10%;
+  width: 100%;
 }
 
 .project__image {
@@ -207,7 +212,8 @@ main {
 .project__button-select {
   background: none;
   padding: 10px 20px;
-  border: 1px solid #ff6b00;
+  border: 1px solid #8993a4;
+  color: #091e42;
 }
 
 .see__project-button {
@@ -230,15 +236,9 @@ main {
 
 /* Professional project section  */
 .professional__project {
-  background-image: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(../icons_copy/cardBackground.svg);
+  background-image: url(../icons_copy/cardBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* height: 100%; */
   margin: 0 24px 0 24px;
   display: flex;
   flex-direction: column;
@@ -274,7 +274,7 @@ main {
   font-weight: 400;
   font-size: 16px;
   border: none;
-  margin: 0px 10px 0 0;
+  margin: 0 10 0 0;
   padding: 10px 10px 10px 0;
   background: rgba(255, 255, 255, 0.24);
   color: #fff;
@@ -309,6 +309,7 @@ main {
   padding: 10px;
   width: 100%;
 }
+
 .professional__project-link:hover {
   background: #fff5e1;
   color: #f55800;
@@ -324,6 +325,7 @@ main {
   background-repeat: no-repeat;
   background-position: right bottom;
   padding: 0 0 40% 0;
+  border-bottom: 2px solid #c9cfcb;
 }
 
 .aboutme__container {
@@ -336,7 +338,6 @@ main {
 .aboutme__title {
   font-family: 'Crete Round', sans-serif;
   font-size: 72px;
-  letter-spacing: 0.37;
   color: #ff6b00;
   font-weight: 400;
   letter-spacing: 5px;
@@ -378,45 +379,42 @@ main {
 
 .aboutme__background-image {
   display: flex;
-  background-image: url('./images/aboutme.png');
   background-repeat: no-repeat;
   background-position: right;
 }
 
-.aboutme__separator {
-  margin: 50px 0 0 0;
-  justify-content: center;
-  align-items: center;
-}
-
 .aboutme__details {
-  padding-top: 70px;
   background: #1c1a19;
   color: #fff;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding-bottom: 10%;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 30px 200px;
-  grid-gap: 10px;
-  padding: 10px;
-  text-align: center;
-  font-family: 'InaiMathi', sans-serif;
-}
-
-.item2 {
-  font-size: 35px;
-}
-
-.aboutme__details ul li {
-  list-style: none;
+.aboutme__sub-container {
   display: flex;
-  font-size: 20px;
-  padding: 15px;
+  justify-content: center;
+  list-style: none;
+  padding: 10% 24px 0% 24px;
+}
+
+.aboutme__content {
+  display: flex;
   font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.aboutme__item {
+  list-style: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 44px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* Feedback page  */
@@ -427,6 +425,14 @@ main {
   padding: 100px 24px 0 24px;
   justify-content: center;
   align-items: center;
+}
+
+.contctme_p {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  font-weight: bolder;
 }
 
 .contactme__content {
@@ -443,8 +449,7 @@ main {
 }
 
 form {
-  width: 100%;
-  padding: 100px 0 0 0;
+  flex-grow: 1;
 }
 
 .contactme__formgroup input {
@@ -457,11 +462,6 @@ form {
   font-size: 15px;
   width: 80%;
   font-family: 'Inter', sans-serif;
-}
-
-input:hover,
-textarea:hover {
-  transform: scale(1.2);
 }
 
 .contactme__input:focus {
@@ -504,11 +504,11 @@ textarea:hover {
   border: 1px solid #f55800;
   background: #ff6b00;
   color: #fff;
-  width: 30%;
   padding: 10px;
   font-size: 15px;
   font-family: 'Inter', sans-serif;
   align-items: center;
+  width: fit-content;
 }
 
 .contactme__submit-button:hover {
@@ -546,10 +546,6 @@ footer {
   padding: 30px;
 }
 
-img:hover {
-  transform: scale(1.2);
-}
-
 @media only screen and (min-width: 768px) {
   .nav__logo {
     font-size: 20px;
@@ -565,21 +561,45 @@ img:hover {
   }
 
   .nav__desktop-items a {
+    font-family: 'Inter', sans-serif;
     padding: 20px;
     text-decoration: none;
     color: #fff;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .profile__section {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 30% 0 30%;
+    padding: 0 5% 0 5%;
+    background-image: url('./icons_copy/desktopBackgroundHeader.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+  }
+
+  .profile__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .profile__title,
+  .profile__sub-title,
+  .profile__details {
+    width: 50%;
+    padding: 0 0 15px 0;
   }
 
   .profile__socials {
     display: flex;
     flex-direction: column;
-    background: url();
   }
 
   .recent__works {
@@ -587,24 +607,70 @@ img:hover {
     padding: 0;
   }
 
-  .project__works {
-  }
-
   .project__image {
     background-size: contain;
     padding-bottom: 30%;
     background-position: center;
-    width: 200%;
-  }
-
-  .professional__project {
   }
 
   #project__grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 
-  #project_1 {
-    width: calc(100% / 3);
+  .project__title {
+    display: grid;
+    grid-template-columns: 40% auto;
+    padding: 10% 24px 8% 24px;
+  }
+
+  .project__title img {
+    width: 90%;
+  }
+
+  .aboutme__description {
+    width: 50%;
+  }
+
+  .project__block-container {
+    padding: 0% 24px 0% 24px;
+    width: 100%;
+  }
+
+  .aboutme {
+    background-image: url('./icons_copy/illustration-about\ me.svg');
+    background-repeat: no-repeat;
+    background-position: right top 15%;
+    background-size: 50%;
+    padding: 0 0 10%;
+  }
+
+  .aboutme__details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0 0 5%;
+    height: 50vh;
+  }
+
+  .aboutme__sub-container {
+    padding: 0 5% 0 5%;
+  }
+
+  .contactme {
+    flex-direction: row;
+  }
+
+  .contactme p {
+    flex-basis: 0;
+    flex-grow: 1;
+    display: flex;
+    margin-top: -20%;
+    padding: 10% 0% 10% 10%;
+  }
+
+  #form {
+    flex-grow: 1;
+    padding: 0 10% 10% 10%;
   }
 }
