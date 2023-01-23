@@ -99,7 +99,7 @@ the technologies I am familiar with. The web page is still in it youthful stage 
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- **N/A**
+- **GitHub Pages: https://shafiuyushawu.github.io/portfolio-/**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
