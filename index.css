@@ -16,11 +16,6 @@ body {
   flex-direction: column;
 }
 
-/* Header section  */
-header {
-  display: grid;
-}
-
 h1,
 h3,
 ul,
@@ -29,39 +24,8 @@ p {
   margin: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #3c3a39;
-  padding: 10px;
-}
-
-.nav__logo {
-  width: 77px;
-  height: 24px;
-  display: flex;
-  justify-content: flex-start;
-  font-size: 18px;
-}
-
-.nav__desktop {
-  display: none;
-}
-
-.nav__logo a {
-  font-family: 'Inter', sans-serif;
-  color: #fff5e1;
-  text-decoration: none;
-  display: flex;
-}
-
-.nav__hamburger {
-  padding-right: 10px;
-}
-
-.nav__hamburger img {
-  width: 20px;
+header {
+  background-color: #262200;
 }
 
 /* mmain page  */
@@ -547,30 +511,7 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-  .nav__logo {
-    font-size: 20px;
-  }
-
-  .nav__hamburger img {
-    display: none;
-  }
-
-  .nav__desktop {
-    display: flex;
-    list-style: none;
-  }
-
-  .nav__desktop-items a {
-    font-family: 'Inter', sans-serif;
-    padding: 20px;
-    text-decoration: none;
-    color: #fff;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
+  
   .profile__section {
     display: flex;
     flex-direction: row-reverse;
