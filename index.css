@@ -58,13 +58,6 @@ a {
   padding: 0 24px;
 }
 
-.nav__menu {
-  display: flex;
-  align-items: ce;
-
-  gap: 60px;
-}
-
 .nav__link {
   transition: 0.7 ease;
 }
@@ -96,11 +89,13 @@ a {
 }
 
 .nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
   position: fixed;
   left: -100%;
   top: 10px;
   padding-top: 70px;
-  gap: 0;
   flex-direction: column;
   background: #3e3c3c;
   width: 100%;
@@ -611,6 +606,7 @@ footer {
   .hamburger {
     display: none;
   }
+
   .nav__menu {
     left: 0;
     top: 0;
@@ -627,6 +623,7 @@ footer {
     width: 0;
     border: none;
   }
+
   .nav__mobile-link {
     font-size: 15px;
   }
