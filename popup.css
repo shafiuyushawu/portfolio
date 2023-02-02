@@ -4,6 +4,89 @@ p {
   margin: 0;
 }
 
+.project__section {
+  padding: 24px 24px;
+}
+
+.titleDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+
+.projectTitle {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.storyDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.multiStoryDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.multiStoryTitle {
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.storyBtnDiv {
+  display: flex;
+  gap: 10px;
+}
+
+.storyBtn {
+  padding: 10px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  background: #fff;
+  border: 1px solid #8993a4;
+}
+
+.storyProjectBtn {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  background: #ff6b00;
+  border: 1px solid #ff6b00;
+  color: #fff;
+  padding: 10px;
+  width: 40%;
+}
+
+.storyProjectBtn:hover {
+  background: #fff5e1;
+  color: #f55800;
+}
+
+.multiStoryPara {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .section {
   position: fixed;
   width: 100vw;
@@ -18,8 +101,6 @@ p {
   display: flex;
   gap: 20px;
   position: relative;
-  margin: 24px;
-  width: 95%;
   height: 90vh;
   background-color: white;
   flex-direction: column;
@@ -177,6 +258,11 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
+  .popup__section {
+    margin: 70px 120px 70px 100px;
+    height: 83vh;
+  }
+
   .tittle {
     font-size: 32px;
   }
@@ -209,5 +295,41 @@ p {
   .descButton {
     justify-content: flex-start;
     gap: 20px;
+  }
+
+  .titleDiv {
+    flex-direction: row;
+    padding: 30px 0;
+  }
+
+  .storyDiv {
+    flex-direction: row;
+  }
+
+  .storyImg {
+    width: 200%;
+  }
+
+  .multiStoryDiv {
+    width: 30;
+  }
+
+  .projectTitle {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .multiStoryPara {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .storyBtn {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .titleBar {
+    width: 70%;
   }
 }

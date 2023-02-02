@@ -1,4 +1,4 @@
-const openPopup1 = document.getElementById('see__project1');
+const openPopup1 = document.querySelector('.storyProjectBtn');
 const openPopup2 = document.getElementById('see__project2');
 const openPopup3 = document.getElementById('see__project3');
 const openPopup4 = document.getElementById('see__project4');
@@ -42,7 +42,81 @@ const data = [
       },
     },
   },
+  {
+    projectTitile: {
+      title: 'My Recent Works',
+      titleBar: './icons_copy/Vectortitle.svg',
+    },
+    story: {
+      storyImg: './icons_copy/ImgPlaceholder.svg',
+    },
+    storyProjectBtn: 'See Project',
+  },
 ];
+
+const projectiSection = document.querySelector(
+  'body .body__section main .project__section .card',
+);
+
+const titleDiv = document.createElement('div');
+titleDiv.className = 'titleDiv';
+
+const projectTitile = document.createElement('h2');
+projectTitile.className = 'projectTitle';
+projectTitile.innerHTML = data[1].projectTitile.title;
+const titleBar = document.createElement('img');
+titleBar.className = 'titleBar';
+titleBar.setAttribute('src', data[1].projectTitile.titleBar);
+
+const storyDiv = document.createElement('div');
+storyDiv.className = 'storyDiv';
+const storyImg = document.createElement('img');
+storyImg.className = 'storyImg';
+storyImg.setAttribute('src', data[1].story.storyImg);
+
+const multiStoryDiv = document.createElement('div');
+multiStoryDiv.className = 'multiStoryDiv';
+const multiStoryTitle = document.createElement('h3');
+multiStoryTitle.className = 'multiStoryTitle';
+multiStoryTitle.innerHTML = data[0].title;
+const multiStoryPara = document.createElement('p');
+multiStoryPara.className = 'multiStoryPara';
+multiStoryPara.innerHTML = data[0].description;
+
+const storyBtnDiv = document.createElement('div');
+storyBtnDiv.classList = 'storyBtnDiv';
+
+const storyBtn1 = document.createElement('button');
+storyBtn1.className = 'storyBtn';
+storyBtn1.innerHTML = data[0].techButton.tech1;
+
+const storyBtn2 = document.createElement('button');
+storyBtn2.className = 'storyBtn';
+storyBtn2.innerHTML = data[0].techButton.tech2;
+
+const storyBtn3 = document.createElement('button');
+storyBtn3.className = 'storyBtn';
+storyBtn3.innerHTML = data[0].techButton.tech3;
+
+const storyProjectBtn = document.createElement('button');
+storyProjectBtn.className = 'storyProjectBtn';
+storyProjectBtn.id = 'see__project1';
+storyProjectBtn.innerHTML = data[1].storyProjectBtn;
+
+titleDiv.appendChild(projectTitile);
+titleDiv.appendChild(titleBar);
+projectiSection.appendChild(titleDiv);
+projectiSection.appendChild(storyDiv);
+storyDiv.appendChild(storyImg);
+storyDiv.appendChild(multiStoryDiv);
+multiStoryDiv.appendChild(multiStoryTitle);
+multiStoryDiv.appendChild(multiStoryPara);
+multiStoryDiv.appendChild(storyBtnDiv);
+multiStoryDiv.appendChild(storyBtnDiv);
+storyBtnDiv.appendChild(storyBtn1);
+storyBtnDiv.appendChild(storyBtn2);
+storyBtnDiv.appendChild(storyBtn3);
+multiStoryDiv.appendChild(storyProjectBtn);
 
 for (let popup = 0; popup < openPopups.length; popup += 1) {
   openPopups[popup].addEventListener('click', () => {
