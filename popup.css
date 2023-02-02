@@ -192,7 +192,7 @@ p {
   }
 
   .popImg {
-    height: 100%;
+    height: 80%;
     min-width: fit-content;
   }
 
@@ -203,7 +203,7 @@ p {
 
   .descBtnContainer {
     width: 50%;
-    justify-content: space-between;
+    gap: 1;
   }
 
   .descButton {
