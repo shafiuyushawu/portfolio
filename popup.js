@@ -3,6 +3,8 @@ const body = document.querySelector(
   'body .body__section main .project__section .card',
 );
 
+
+//data object
 const data = [
   {
     title: 'Multi-Post Stories',
@@ -51,6 +53,8 @@ const projectiSection = document.querySelector(
   'body .body__section main .card ',
 );
 
+
+//recent project section
 
 const titleDiv = document.createElement('div');
 titleDiv.className = 'titleDiv';
@@ -177,62 +181,16 @@ profession__project.appendChild(cardBtn3)
 project__container.appendChild(cardProjectBtn)
 }
 
-
-// const card = document.createElement("div");
-// card.className = "card";
-// card.id = "project__grid";
-
-// const project__container = document.createElement("div");
-// project__container.className = "project__container";
-// project__container.id = "project_1";
-
-// const content__container = document.createElement("div");
-// content__container.className = "content__container"
-
-// const project__content = document.createElement("div");
-// project__content.className = "project__content";
-
-// const h3 = document.createElement("h3");
-// h3.innerHTML = data[2].cardTitle
-
-// const p = document.createElement("p")
-// p.innerHTML = data[2].cardDescription;
-
-// const profession__project = document.createElement("div");
-// profession__project.className = "profession__project-butons";
-
-// const cardBtn1 = document.createElement("button")
-// cardBtn1.innerHTML = data[2].cardBtn.cardBtn1; 
-
-// const cardBtn2 = document.createElement("button")
-// cardBtn2.innerHTML = data[2].cardBtn.cardBtn2; 
-
-// const cardBtn3 = document.createElement("button")
-// cardBtn3.innerHTML = data[2].cardBtn.cardBtn3; 
-
-// const cardProjectBtn = document.createElement("button");
-// cardProjectBtn.className = "see__project2";
-// cardProjectBtn.id = "see__project2"
-// cardProjectBtn.innerHTML = data[2].cardProjectBtn
-
-// cardSection.appendChild(card);
-// card.appendChild(project__container);
-// project__container.appendChild(content__container);
-// content__container.appendChild(project__content);
-// project__content.appendChild(h3);
-// project__content.appendChild(p)
-// project__content.appendChild(profession__project);
-// profession__project.appendChild(cardBtn1)
-// profession__project.appendChild(cardBtn2)
-// profession__project.appendChild(cardBtn3)
-// project__container.appendChild(cardProjectBtn)
+//popup window
 
 const openPopup1 = document.getElementById('see__project1');
 const openPopup2 = document.getElementById('see__project2');
+const openPopup3 = document.getElementById('see__project2');
 
 const openPopups = [
   openPopup1,
   openPopup2,
+  openPopup3
 ];
 
 for (let popup = 0; popup < openPopups.length; popup += 1) {
