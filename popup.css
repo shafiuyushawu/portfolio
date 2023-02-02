@@ -1,64 +1,58 @@
 h1,
 p {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .section {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0, 90%);
-    display: flex;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 90%);
+  display: flex;
 }
 
 .popup__section {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    margin: 24px;
-    width: 95%;
-    height: 90vh;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin: 24px;
+  width: 95%;
+  height: 90vh;
+  background-color: white;
+  flex-direction: column;
+  padding: 16px;
 }
 
 .topContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .tittle {
-    font-family: 'Crete Round', sans-serif;
-    font-weight: 300;
-    font-size: 25px;
-    color: #1c1a19;
-    color: #091e42;
-}
-
-.close {
-   position: relative;
-    
+  font-family: 'Crete Round', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color: #1c1a19;
+  color: #091e42;
 }
 
 .technologyButtons {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .btn {
-    font-family: 'Crete Round', sans-serif;
-    font-style: normal;
-    font-size: 13px;
-    padding: 5px 10px;
-    columns: ##3C3A39;
-    border: 1px solid  #dfe1e6;
-    background: none;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-size: 13px;
+  padding: 5px 10px;
+  columns: #3c3a39;
+  border: 1px solid  #dfe1e6;
+  background: none;
 }
 
 .close {
@@ -68,156 +62,104 @@ p {
 }
 
 .bar {
-        display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #111;
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #111;
 }
 
 .close .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+  transform: translateY(8px) rotate(45deg);
 }
 
 .close .bar:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .close .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .descContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .popImg {
-    position: relative;
-    flex-grow: 1;
+  position: relative;
+  flex-grow: 1;
 }
 
 .descBtnContainer {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .description {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #344563;
-    padding:  10px 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #344563;
+  padding: 10px 0;
 }
 
 .descButton {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .seeLive {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    display: flex;
-    padding: 10px 15px;
-    background: #FF6B00;
-    color: #fff;
-    text-align: center;
-    border: 1px solid #FF6B00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  padding: 10px 15px;
+  background: #ff6b00;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #ff6b00;
 }
 
 .seeLive:hover {
-    background: #fff5e1;
-    color: #f55800
+  background: #fff5e1;
+  color: #f55800;
 }
 
 .seeLiveIcon {
-    justify-content: space-between;
-    padding-left: 10px;
-    height: 80%;
-    justify-content: center;
-    align-self: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  height: 80%;
+  align-self: center;
 }
 
 .seeLiveIcon:hover {
-    color: #f55800;
+  color: #f55800;
 }
 
 .seeSource {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 17px;
-    display: flex;
-    padding: 10px 15px;
-    background: #FF6B00;
-    color: #fff;
-    text-align: center;
-    border: 1px solid #FF6B00;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  padding: 10px 15px;
+  background: #ff6b00;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #ff6b00;
 }
 
 .seeSource:hover {
-    background: #fff5e1;
-    color: #f55800
+  background: #fff5e1;
+  color: #f55800;
 }
 
 .seeSourceIcon {
-    justify-content: space-between;
-    padding-left: 10px;
-    justify-content: center;
-    align-self: center;
-}
-
-@media only screen and (min-width: 570px) {
-    .popImg {
-        width: 90%;
-    }
-}
-
-
-@media only screen and (min-width: 640px) {
-    .popImg {
-        width: 90%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .tittle {
-        font-size: 32px;
-    }
-
-    .btn {
-        font-size: 17px;
-    }
-    
-    .descContainer {
-        flex-direction: row;
-        gap: 20px;
-        min-height: 70vh;
-    }
-    
-    .popImg {
-        height: 100%;
-        min-width: fit-content;
-    }
-
-    .description {
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-    .descBtnContainer {
-        width: 50%;
-        justify-content: space-between;
-    }
-
-    .descButton {
-        justify-content: flex-start;
-        gap: 20px;
-    }
-
+  justify-content: space-between;
+  padding-left: 10px;
+  align-self: center;
 }

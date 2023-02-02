@@ -298,7 +298,6 @@ main {
 .card {
   display: flex;
   flex-direction: column;
-  /* width:100% ; */
 }
 
 .project__container {
@@ -313,16 +312,65 @@ main {
 .project__content {
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
 }
 
-.project__content h3{
+.project__content h3 {
   font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
+  color: #fff;
 }
 
+.content__container {
+  padding: 0 24px 20px 24px;
+}
+
+.project__content p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.profession__project-butons {
+  display: flex;
+  gap: 10px;
+}
+
+.profession__project-butons button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  padding: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.24);
+  color: #fff;
+}
+
+.see__project2 {
+  font-family: 'Crete Round', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  background: #ff6b00;
+  color: #fff;
+  padding: 10px;
+  justify-content: center;
+  border: 1px solid #f55800;
+}
+
+.see__project2:hover {
+  background: #fff5e1;
+  color: #f55800;
+  font-weight: 400;
+  border: 1px solid #f55800;
+}
 
 /* about me page  */
 .aboutme {
@@ -628,7 +676,7 @@ footer {
     background-position: center;
   }
 
-  #project__grid {
+  #card__grid {
     display: grid;
     grid-template-columns: auto auto auto;
   }
