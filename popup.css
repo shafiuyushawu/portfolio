@@ -251,9 +251,9 @@ p {
   }
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 770px) {
   .popImg {
-    width: 90%;
+    width: 200px;
   }
 }
 

@@ -1,4 +1,4 @@
-const openPopup1 = document.querySelector('.storyProjectBtn');
+const openPopup1 = document.querySelector('.see__project1');
 const openPopup2 = document.getElementById('see__project2');
 const openPopup3 = document.getElementById('see__project3');
 const openPopup4 = document.getElementById('see__project4');
@@ -7,7 +7,6 @@ const openPopup6 = document.getElementById('see__project6');
 const openPopup7 = document.getElementById('see__project7');
 
 const openPopups = [
-  openPopup1,
   openPopup2,
   openPopup3,
   openPopup4,
@@ -15,6 +14,7 @@ const openPopups = [
   openPopup6,
   openPopup7,
 ];
+
 
 const body = document.querySelector(
   'body .body__section main .project__section .card',
@@ -55,8 +55,9 @@ const data = [
 ];
 
 const projectiSection = document.querySelector(
-  'body .body__section main .project__section .card',
+  'body .body__section main .card ',
 );
+
 
 const titleDiv = document.createElement('div');
 titleDiv.className = 'titleDiv';
