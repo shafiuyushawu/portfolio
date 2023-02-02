@@ -1,4 +1,3 @@
-const openPopup1 = document.querySelector('.see__project1');
 const openPopup2 = document.getElementById('see__project2');
 const openPopup3 = document.getElementById('see__project3');
 const openPopup4 = document.getElementById('see__project4');
@@ -6,14 +5,7 @@ const openPopup5 = document.getElementById('see__project5');
 const openPopup6 = document.getElementById('see__project6');
 const openPopup7 = document.getElementById('see__project7');
 
-const openPopups = [
-  openPopup2,
-  openPopup3,
-  openPopup4,
-  openPopup5,
-  openPopup6,
-  openPopup7,
-];
+
 
 
 const body = document.querySelector(
@@ -118,6 +110,17 @@ storyBtnDiv.appendChild(storyBtn1);
 storyBtnDiv.appendChild(storyBtn2);
 storyBtnDiv.appendChild(storyBtn3);
 multiStoryDiv.appendChild(storyProjectBtn);
+
+const openPopup1 = document.getElementById('see__project1');
+const openPopups = [
+  openPopup1,
+  openPopup2,
+  openPopup3,
+  openPopup4,
+  openPopup5,
+  openPopup6,
+  openPopup7,
+];
 
 for (let popup = 0; popup < openPopups.length; popup += 1) {
   openPopups[popup].addEventListener('click', () => {
