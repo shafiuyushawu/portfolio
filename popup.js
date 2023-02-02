@@ -1,12 +1,3 @@
-const openPopup2 = document.getElementById('see__project2');
-const openPopup3 = document.getElementById('see__project3');
-const openPopup4 = document.getElementById('see__project4');
-const openPopup5 = document.getElementById('see__project5');
-const openPopup6 = document.getElementById('see__project6');
-const openPopup7 = document.getElementById('see__project7');
-
-
-
 
 const body = document.querySelector(
   'body .body__section main .project__section .card',
@@ -44,6 +35,16 @@ const data = [
     },
     storyProjectBtn: 'See Project',
   },
+  {
+    cardTitle: "Profetional Art <br> Printing Data",
+    cardDescription: "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
+    cardBtn: {
+      cardBtn1: "HTML",
+      cardBtn2: "Boostrap",
+      cardBtn3: "Ruby",
+    },
+    cardProjectBtn: "Seen Project"
+  }
 ];
 
 const projectiSection = document.querySelector(
@@ -111,15 +112,127 @@ storyBtnDiv.appendChild(storyBtn2);
 storyBtnDiv.appendChild(storyBtn3);
 multiStoryDiv.appendChild(storyProjectBtn);
 
+
+//Project cards
+
+const projectCard1 = document.getElementById('projectCard1')
+const projectCard2 = document.getElementById("projectCard2")
+const projectCard3 = document.getElementById("projectCard3")
+const projectCard4 = document.getElementById("projectCard4")
+const projectCard5 = document.getElementById("projectCard5")
+const projectCard6 = document.getElementById("projectCard6")
+
+const projectCard = [projectCard1, projectCard2, projectCard3, projectCard4, projectCard5, projectCard6]
+
+for(let i = 0; i < projectCard.length; i += 1) {
+  cardSection = projectCard[i];
+
+  const card = document.createElement("div");
+card.className = "card";
+card.id = "project__grid";
+
+const project__container = document.createElement("div");
+project__container.className = "project__container";
+project__container.id = "project_1";
+
+const content__container = document.createElement("div");
+content__container.className = "content__container"
+
+const project__content = document.createElement("div");
+project__content.className = "project__content";
+
+const h3 = document.createElement("h3");
+h3.innerHTML = data[2].cardTitle
+
+const p = document.createElement("p")
+p.innerHTML = data[2].cardDescription;
+
+const profession__project = document.createElement("div");
+profession__project.className = "profession__project-butons";
+
+const cardBtn1 = document.createElement("button")
+cardBtn1.innerHTML = data[2].cardBtn.cardBtn1; 
+
+const cardBtn2 = document.createElement("button")
+cardBtn2.innerHTML = data[2].cardBtn.cardBtn2; 
+
+const cardBtn3 = document.createElement("button")
+cardBtn3.innerHTML = data[2].cardBtn.cardBtn3; 
+
+const cardProjectBtn = document.createElement("button");
+cardProjectBtn.className = "see__project2";
+cardProjectBtn.id = "see__project2"
+cardProjectBtn.innerHTML = data[2].cardProjectBtn
+
+cardSection.appendChild(card);
+card.appendChild(project__container);
+project__container.appendChild(content__container);
+content__container.appendChild(project__content);
+project__content.appendChild(h3);
+project__content.appendChild(p)
+project__content.appendChild(profession__project);
+profession__project.appendChild(cardBtn1)
+profession__project.appendChild(cardBtn2)
+profession__project.appendChild(cardBtn3)
+project__container.appendChild(cardProjectBtn)
+}
+
+
+// const card = document.createElement("div");
+// card.className = "card";
+// card.id = "project__grid";
+
+// const project__container = document.createElement("div");
+// project__container.className = "project__container";
+// project__container.id = "project_1";
+
+// const content__container = document.createElement("div");
+// content__container.className = "content__container"
+
+// const project__content = document.createElement("div");
+// project__content.className = "project__content";
+
+// const h3 = document.createElement("h3");
+// h3.innerHTML = data[2].cardTitle
+
+// const p = document.createElement("p")
+// p.innerHTML = data[2].cardDescription;
+
+// const profession__project = document.createElement("div");
+// profession__project.className = "profession__project-butons";
+
+// const cardBtn1 = document.createElement("button")
+// cardBtn1.innerHTML = data[2].cardBtn.cardBtn1; 
+
+// const cardBtn2 = document.createElement("button")
+// cardBtn2.innerHTML = data[2].cardBtn.cardBtn2; 
+
+// const cardBtn3 = document.createElement("button")
+// cardBtn3.innerHTML = data[2].cardBtn.cardBtn3; 
+
+// const cardProjectBtn = document.createElement("button");
+// cardProjectBtn.className = "see__project2";
+// cardProjectBtn.id = "see__project2"
+// cardProjectBtn.innerHTML = data[2].cardProjectBtn
+
+// cardSection.appendChild(card);
+// card.appendChild(project__container);
+// project__container.appendChild(content__container);
+// content__container.appendChild(project__content);
+// project__content.appendChild(h3);
+// project__content.appendChild(p)
+// project__content.appendChild(profession__project);
+// profession__project.appendChild(cardBtn1)
+// profession__project.appendChild(cardBtn2)
+// profession__project.appendChild(cardBtn3)
+// project__container.appendChild(cardProjectBtn)
+
 const openPopup1 = document.getElementById('see__project1');
+const openPopup2 = document.getElementById('see__project2');
+
 const openPopups = [
   openPopup1,
   openPopup2,
-  openPopup3,
-  openPopup4,
-  openPopup5,
-  openPopup6,
-  openPopup7,
 ];
 
 for (let popup = 0; popup < openPopups.length; popup += 1) {
