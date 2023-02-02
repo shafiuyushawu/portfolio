@@ -16,6 +16,7 @@ body {
 }
 
 h1,
+h2,
 h3,
 ul,
 p {
@@ -289,8 +290,18 @@ main {
   border: 1px solid #f55800;
 }
 
+.popup__window {
+  /* display: none; */
+}
+
 /* Professional project section  */
-.professional__project {
+.card {
+  display: flex;
+  flex-direction: column;
+  /* width:100% ; */
+}
+
+.project__container {
   background-image: url(./icons_copy/cardBackground.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -299,77 +310,19 @@ main {
   flex-direction: column;
 }
 
-.professional__project-container {
-  padding: 25% 5% 0 5%;
-}
-
-.professional__project-title {
-  font-family: 'Crete Round', sans-serif;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 44px;
-  color: #fff;
-}
-
-.professional__project-detail {
-  font-family: 'Inter', sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  color: #fff;
-  padding: 10% 10% 0 0;
-}
-
-.profession__project-butons {
-  padding: 20px 0 0 0;
-}
-
-.professional__button-select {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  border: none;
-  margin: 0 10 0 0;
-  padding: 10px 10px 10px 0;
-  background: rgba(255, 255, 255, 0.24);
-  color: #fff;
-}
-
-.professional__see-project {
+.project__content {
   display: flex;
-  background: #f55800;
-  border: 1px solid #f55800;
-  justify-content: center;
-  margin-top: 50px;
-  color: #fff;
+  flex-direction: column;
 }
 
-.professional__see-project:hover {
-  background: #fff5e1;
-  color: #f55800;
-  font-weight: 400;
-}
-
-.professional__project-link {
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  font-weight: 700;
+.project__content h3{
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
-  line-height: 24px;
-  text-decoration: none;
-  color: #fff;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  width: 100%;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
 }
 
-.professional__project-link:hover {
-  background: #fff5e1;
-  color: #f55800;
-  font-weight: 400;
-}
 
 /* about me page  */
 .aboutme {
@@ -615,6 +568,7 @@ footer {
     justify-content: flex-end;
     padding: 0;
     height: 70px;
+    position: relative;
   }
 
   .nav__item {
