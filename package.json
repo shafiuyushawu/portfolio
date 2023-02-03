@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/shafiuyushawu/portfolio-/issues"
   },
-  "homepage": "https://github.com/shafiuyushawu/portfolio-#readme"
+  "homepage": "https://github.com/shafiuyushawu/portfolio-#readme",
+  "dependencies": {}
 }
