@@ -149,7 +149,7 @@ p {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #111;
+  background-color: rgb(78, 78, 78);
 }
 
 .close .bar:nth-child(1) {
@@ -173,9 +173,7 @@ p {
   align-self: flex-start;
   overflow: hidden;
   width: 100%;
-  
   top: 0;
-
 }
 
 .descBtnContainer {
@@ -189,9 +187,8 @@ p {
   font-weight: 400;
   color: #344563;
   padding: 10px 0;
-  font-size: 16px;
-  line-height: 30px;
-  margin-top: 0px;
+  font-size: 14px;
+  margin-top: 0;
 }
 
 .descButton {
@@ -203,9 +200,8 @@ p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
   display: flex;
-  padding: 10px 15px;
   background: #ff6b00;
   color: #fff;
   text-align: center;
@@ -219,7 +215,6 @@ p {
 
 .seeLiveIcon {
   justify-content: space-between;
-  padding-left: 10px;
   height: 80%;
   align-self: center;
 }
@@ -232,9 +227,8 @@ p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 14px;
   display: flex;
-  padding: 10px 15px;
   background: #ff6b00;
   color: #fff;
   text-align: center;
@@ -251,10 +245,11 @@ p {
   padding-left: 10px;
   align-self: center;
 }
+
 @media only screen and (min-width: 768px) {
   .popup__section {
     margin: 70px 120px 70px 100px;
-    height: 83vh;
+    height: 750px;
   }
 
   .tittle {
@@ -268,15 +263,18 @@ p {
   .descContainer {
     flex-direction: row;
     gap: 20px;
+
     /* min-height: 70vh; */
   }
 
- 
-
   .description {
-    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #344563;
+    padding: 10px 0;
     line-height: 30px;
-    margin-top: 130px;
+    font-size: 16px;
   }
 
   .descBtnContainer {
@@ -325,13 +323,19 @@ p {
     width: 70%;
   }
 
-    .popImg {
-      align-self: flex-start;
-      overflow: hidden;
-      height: 1000px;
-      width: 1;
-      top: 0;
-  
-    }
+  .popImg {
+    align-self: flex-start;
+    overflow: hidden;
+    width: 100%;
+    top: 0;
+    margin-bottom: 100px;
+  }
 
+  .seeSource {
+    padding: 10px 15px;
+  }
+
+  .seeLive {
+    padding: 15px 25px;
+  }
 }

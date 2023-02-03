@@ -8,6 +8,7 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
+  width: 100vw;
 }
 
 .flex__container {
@@ -38,7 +39,6 @@ a {
   text-decoration: none;
   padding: 0 24px;
   margin: 0;
-  padding: 0;
 }
 
 .navbar__branding {
@@ -58,7 +58,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 24px;
+  width: 100%;
 }
 
 .nav__link {
@@ -67,6 +67,7 @@ a {
 
 .hamburger {
   cursor: pointer;
+  padding: 20px;
 }
 
 .bar {
@@ -76,7 +77,7 @@ a {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background: white;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -128,6 +129,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
 }
 
 /* profile section page */
@@ -182,13 +184,14 @@ main {
 }
 
 .profile__social-icons a {
- cursor: pointer;
+  cursor: pointer;
   width: 100%;
 }
 
 .profile__social-icons a img {
   /* width: 100px; */
 }
+
 /* project section  */
 
 .project__section {
@@ -205,21 +208,11 @@ main {
   padding: 0 24px 0 24px;
 }
 
-.project__title {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-family: 'Crete Round', sans-serif;
-  font-weight: 200;
-  font-size: 32px;
-  color: #1c1a19;
-  padding: 50px 24px 50px 24px;
-}
-
+/*
 .project__title img {
   padding: 10%;
   width: 80%;
-}
+} */
 
 .project__image {
   background-image: url(./icons_copy/ImgPlaceholder.svg);
@@ -231,9 +224,20 @@ main {
   height: 0;
 }
 
-.project__image img {
-  width: 100%;
+.project__title {
+  font-family: 'Crete Round', sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 200;
+  font-size: 32px;
+  color: #1c1a19;
+  padding: 50px 24px 50px 24px;
 }
+
+/* .project__image img {
+  width: 100%;
+} */
 
 .project__block-title {
   font-family: 'Crete Round', sans-serif;
@@ -378,6 +382,7 @@ main {
 /* about me page  */
 .aboutme {
   display: flex;
+
   /* flex-direction: column; */
   background: #1c1a19;
   background-image: url(../icons_copy/amBackground.svg);
@@ -743,8 +748,8 @@ footer {
     padding: 0 10% 10% 10%;
   }
 
-    .profile__social-icons{
-      flex-wrap: wrap;
-      padding-left: 50px;
-    }
+  .profile__social-icons {
+    flex-wrap: wrap;
+    padding-left: 50px;
+  }
 }
