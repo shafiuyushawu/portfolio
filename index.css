@@ -15,6 +15,7 @@ body {
   flex-direction: column;
 }
 
+a,
 h1,
 h2,
 h3,
@@ -36,6 +37,8 @@ a {
   color: white;
   text-decoration: none;
   padding: 0 24px;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar__branding {
@@ -124,10 +127,13 @@ a {
 main {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 /* profile section page */
 .profile__section {
+  width: 100%;
+  height: 70vh;
   background: #1c1a19;
   display: grid;
   gap: 12px;
@@ -139,7 +145,7 @@ main {
 
 .profile__title {
   font-family: 'Crete Round', sans-serif;
-  font-size: 40px;
+  font-size: 32px;
   font-style: normal;
   letter-spacing: 0.37px;
   color: #f55800;
@@ -171,19 +177,18 @@ main {
 
 .profile__social-icons {
   display: flex;
-  width: 327px;
+  padding: 0;
+  margin: 0;
 }
 
-.profile__social-icons ul {
-  list-style: none;
-  display: flex;
-  padding: 10px;
+.profile__social-icons a {
+ cursor: pointer;
+  width: 100%;
 }
 
-.profile__social-icons ul li {
-  padding: 10px;
+.profile__social-icons a img {
+  /* width: 100px; */
 }
-
 /* project section  */
 
 .project__section {
@@ -290,9 +295,7 @@ main {
   border: 1px solid #f55800;
 }
 
-.popup__window {
-  /* display: none; */
-}
+
 
 /* Professional project section  */
 .card {
@@ -375,13 +378,14 @@ main {
 /* about me page  */
 .aboutme {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   background: #1c1a19;
   background-image: url(../icons_copy/amBackground.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
   padding: 0 0 40% 0;
   border-bottom: 2px solid #c9cfcb;
+  width: 100%;
 }
 
 .aboutme__container {
@@ -439,9 +443,14 @@ main {
   background-position: right;
 }
 
-.aboutme__details {
+.technology__section {
+  display: flex;
   background: #1c1a19;
   color: #fff;
+  width: 100%;
+}
+
+.aboutme__details {
   display: flex;
   flex-direction: column;
   padding-bottom: 10%;
@@ -472,6 +481,7 @@ main {
   display: flex;
   justify-content: flex-start;
 }
+
 
 /* Feedback page  */
 .contactme {
@@ -506,6 +516,7 @@ main {
 
 form {
   flex-grow: 1;
+  width: 100%;
 }
 
 .contactme__formgroup input {
@@ -516,7 +527,7 @@ form {
   border: none;
   padding: 20px 20px 20px 0;
   font-size: 15px;
-  width: 80%;
+  width: 100%;
   font-family: 'Inter', sans-serif;
 }
 
@@ -637,7 +648,6 @@ footer {
   .profile__section {
     display: flex;
     flex-direction: row-reverse;
-    padding: 0 5% 0 5%;
     background-image: url('./icons_copy/desktopBackgroundHeader.svg');
     background-repeat: no-repeat;
     background-position: right;
@@ -732,4 +742,9 @@ footer {
     flex-grow: 1;
     padding: 0 10% 10% 10%;
   }
+
+    .profile__social-icons{
+      flex-wrap: wrap;
+      padding-left: 50px;
+    }
 }

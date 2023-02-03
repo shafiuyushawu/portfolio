@@ -104,7 +104,7 @@ p {
   height: 90vh;
   background-color: white;
   flex-direction: column;
-  padding: 16px;
+  padding: 50px;
 }
 
 .topContainer {
@@ -170,8 +170,12 @@ p {
 }
 
 .popImg {
-  position: relative;
-  flex-grow: 1;
+  align-self: flex-start;
+  overflow: hidden;
+  width: 100%;
+  
+  top: 0;
+
 }
 
 .descBtnContainer {
@@ -185,6 +189,9 @@ p {
   font-weight: 400;
   color: #344563;
   padding: 10px 0;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 0px;
 }
 
 .descButton {
@@ -244,19 +251,6 @@ p {
   padding-left: 10px;
   align-self: center;
 }
-
-@media only screen and (min-width: 570px) {
-  .popImg {
-    width: 90%;
-  }
-}
-
-@media only screen and (min-width: 770px) {
-  .popImg {
-    width: 200px;
-  }
-}
-
 @media only screen and (min-width: 768px) {
   .popup__section {
     margin: 70px 120px 70px 100px;
@@ -274,17 +268,15 @@ p {
   .descContainer {
     flex-direction: row;
     gap: 20px;
-    min-height: 70vh;
+    /* min-height: 70vh; */
   }
 
-  .popImg {
-    height: 80%;
-    min-width: fit-content;
-  }
+ 
 
   .description {
     font-size: 16px;
     line-height: 30px;
+    margin-top: 130px;
   }
 
   .descBtnContainer {
@@ -332,4 +324,14 @@ p {
   .titleBar {
     width: 70%;
   }
+
+    .popImg {
+      align-self: flex-start;
+      overflow: hidden;
+      height: 1000px;
+      width: 1;
+      top: 0;
+  
+    }
+
 }

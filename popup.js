@@ -231,7 +231,6 @@ for (let i = 0; i < projectCard.length; i += 1) {
 
   const cardProjectBtn = document.createElement("button");
   cardProjectBtn.className = "see__project2";
-  cardProjectBtn.id = "see__project2";
   cardProjectBtn.innerHTML = data[2].cardProjectBtn;
 
   cardSection.appendChild(card);
@@ -248,7 +247,7 @@ for (let i = 0; i < projectCard.length; i += 1) {
 }
 
 // popup window
-const openPopups = document.querySelectorAll(".cardSection button");
+const openPopups = document.querySelectorAll(".project__section button");
 
 for (let popup = 0; popup < openPopups.length; popup += 1) {
   openPopups[popup].addEventListener("click", () => {
@@ -302,12 +301,28 @@ for (let popup = 0; popup < openPopups.length; popup += 1) {
 
     const descButton = document.createElement("div");
     descButton.className = "descButton";
+
+    const seeLiveLink = document.createElement("a");
+    seeLiveLink.className = "see__me_link";
+    seeLiveLink.setAttribute(
+      "href",
+      "https://shafiuyushawu.github.io/portfolio-/"
+    );
+
     const seeLive = document.createElement("button");
     seeLive.className = "seeLive";
     seeLive.innerHTML = data[0].descButton.seeLive.seeLiveTxt;
     const seeLiveIcon = document.createElement("img");
     seeLiveIcon.classList = "seeLiveIcon";
     seeLiveIcon.setAttribute("src", data[0].descButton.seeLive.seeLiveIcon);
+    seeLiveIcon.setAttribute("alt", "no internet");
+
+    const seeSourceLink = document.createElement("a");
+    seeSourceLink.className = "see__me_link";
+    seeSourceLink.setAttribute(
+      "href",
+      "https://github.com/shafiuyushawu/portfolio-"
+    );
 
     const seeSource = document.createElement("button");
     seeSource.className = "seeSource";
@@ -318,6 +333,7 @@ for (let popup = 0; popup < openPopups.length; popup += 1) {
       "src",
       data[0].descButton.seeSource.seeSourceIcon
     );
+    seeSourceIcon.setAttribute("alt", "no internet");
 
     topContainer.appendChild(tittle);
     topContainer.appendChild(close);
@@ -334,9 +350,11 @@ for (let popup = 0; popup < openPopups.length; popup += 1) {
     descContainer.appendChild(descBtnContainer);
     descBtnContainer.appendChild(description);
     descBtnContainer.appendChild(descButton);
-    descButton.appendChild(seeLive);
+    descButton.appendChild(seeLiveLink);
+    seeLiveLink.appendChild(seeLive);
     seeLive.appendChild(seeLiveIcon);
-    descButton.appendChild(seeSource);
+    descButton.appendChild(seeSourceLink);
+    seeSourceLink.appendChild(seeSource);
     seeSource.appendChild(seeSourceIcon);
     mainDiv.appendChild(popup);
     body.appendChild(mainDiv);
