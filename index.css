@@ -299,8 +299,6 @@ main {
   border: 1px solid #f55800;
 }
 
-
-
 /* Professional project section  */
 .card {
   display: flex;
@@ -486,7 +484,6 @@ main {
   display: flex;
   justify-content: flex-start;
 }
-
 
 /* Feedback page  */
 .contactme {
