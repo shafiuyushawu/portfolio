@@ -45,6 +45,7 @@ a {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 20px;
+  margin: 0 24px 0 24px;
 }
 
 .nav__mobile-link {
@@ -618,6 +619,7 @@ footer {
 @media only screen and (min-width: 768px) {
   .hamburger {
     display: none;
+    padding: 0 40px;
   }
 
   .nav__menu {

@@ -12,6 +12,7 @@ const data = [
       tech2: 'Boostrap',
       tech3: 'Ruby on rails',
     },
+
     projImg: './icons_copy/Snapshoot Portfolio.svg',
     description:
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
@@ -20,22 +21,27 @@ const data = [
         seeLiveTxt: 'See Live',
         seeLiveIcon: './icons_copy/seeLive.svg',
       },
+
       seeSource: {
         seeSourceTxt: 'See Source',
         seeSourceIcon: './icons_copy/seeSource.svg',
       },
     },
   },
+
   {
     projectTitile: {
       title: 'My Recent Works',
       titleBar: './icons_copy/Vectortitle.svg',
     },
+
     story: {
       storyImg: './icons_copy/ImgPlaceholder.svg',
     },
+
     storyProjectBtn: 'See Project',
   },
+
   {
     cardTitle: 'Profetional Art <br> Printing Data',
     cardDescription:
@@ -45,9 +51,11 @@ const data = [
       cardBtn2: 'Boostrap',
       cardBtn3: 'Ruby',
     },
+
     cardProjectBtn: 'Seen Project',
     cardId: 'projectCard1',
   },
+
   {
     cardTitle: 'Profetional Art <br> Printing Data',
     cardDescription:
@@ -57,9 +65,11 @@ const data = [
       cardBtn2: 'Boostrap',
       cardBtn3: 'Ruby',
     },
+
     cardProjectBtn: 'Seen Project',
     cardId: 'projectCard2',
   },
+
   {
     cardTitle: 'Profetional Art <br> Printing Data',
     cardDescription:
@@ -69,9 +79,11 @@ const data = [
       cardBtn2: 'Boostrap',
       cardBtn3: 'Ruby',
     },
+
     cardProjectBtn: 'Seen Project',
     cardId: 'projectCard3',
   },
+
   {
     cardTitle: 'Profetional Art <br> Printing Data',
     cardDescription:
@@ -81,9 +93,11 @@ const data = [
       cardBtn2: 'Boostrap',
       cardBtn3: 'Ruby',
     },
+
     cardProjectBtn: 'Seen Project',
     cardId: 'projectCard4',
   },
+
   {
     cardTitle: 'Profetional Art <br> Printing Data',
     cardDescription:
@@ -93,9 +107,11 @@ const data = [
       cardBtn2: 'Boostrap',
       cardBtn3: 'Ruby',
     },
+
     cardProjectBtn: 'Seen Project',
     cardId: 'projectCard5',
   },
+
   {
     cardTitle: 'Profetional Art <br> Printing Data',
     cardDescription:
@@ -105,6 +121,7 @@ const data = [
       cardBtn2: 'Boostrap',
       cardBtn3: 'Ruby',
     },
+
     cardProjectBtn: 'Seen Project',
     cardId: 'projectCard6',
   },
@@ -214,6 +231,9 @@ for (let i = 0; i < projectCard.length; i += 1) {
   const h3 = document.createElement('h3');
   h3.innerHTML = data[2].cardTitle;
 
+  const paraDiv = document.createElement('div');
+  paraDiv.classList = 'paragraph_div';
+
   const p = document.createElement('p');
   p.innerHTML = data[2].cardDescription;
 
@@ -238,7 +258,8 @@ for (let i = 0; i < projectCard.length; i += 1) {
   projectContainer.appendChild(contentContainer);
   contentContainer.appendChild(projectContent);
   projectContent.appendChild(h3);
-  projectContent.appendChild(p);
+  projectContent.appendChild(paraDiv);
+  paraDiv.appendChild(p);
   projectContent.appendChild(professionProject);
   professionProject.appendChild(cardBtn1);
   professionProject.appendChild(cardBtn2);
@@ -285,9 +306,13 @@ for (let popup = 0; popup < openPopups.length; popup += 1) {
     btn3.className = 'btn';
     btn3.innerHTML = data[0].techButton.tech3;
 
+    const imageContainer = document.createElement('div');
+    imageContainer.className = 'image-container';
+
     const popImg = document.createElement('img');
     popImg.className = 'popImg';
     popImg.setAttribute('src', data[0].projImg);
+    imageContainer.appendChild(popImg);
 
     const descContainer = document.createElement('div');
     descContainer.className = 'descContainer';
@@ -346,7 +371,7 @@ for (let popup = 0; popup < openPopups.length; popup += 1) {
     techBtn.appendChild(btn2);
     techBtn.appendChild(btn3);
     popup.appendChild(descContainer);
-    descContainer.appendChild(popImg);
+    descContainer.appendChild(imageContainer);
     descContainer.appendChild(descBtnContainer);
     descBtnContainer.appendChild(description);
     descBtnContainer.appendChild(descButton);
