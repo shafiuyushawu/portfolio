@@ -3,6 +3,7 @@ const body = document.querySelector(
 );
 
 // data object
+
 const data = [
   {
     title: "Multi-Post Stories",
@@ -45,7 +46,7 @@ const data = [
       cardBtn3: "Ruby",
     },
     cardProjectBtn: "Seen Project",
-    cardId: "projectCard1"
+    cardId: "projectCard1",
   },
   {
     cardTitle: "Profetional Art <br> Printing Data",
@@ -57,7 +58,7 @@ const data = [
       cardBtn3: "Ruby",
     },
     cardProjectBtn: "Seen Project",
-    cardId: "projectCard2"
+    cardId: "projectCard2",
   },
   {
     cardTitle: "Profetional Art <br> Printing Data",
@@ -69,7 +70,7 @@ const data = [
       cardBtn3: "Ruby",
     },
     cardProjectBtn: "Seen Project",
-    cardId: "projectCard3"
+    cardId: "projectCard3",
   },
   {
     cardTitle: "Profetional Art <br> Printing Data",
@@ -81,7 +82,7 @@ const data = [
       cardBtn3: "Ruby",
     },
     cardProjectBtn: "Seen Project",
-    cardId: "projectCard4"
+    cardId: "projectCard4",
   },
   {
     cardTitle: "Profetional Art <br> Printing Data",
@@ -93,7 +94,7 @@ const data = [
       cardBtn3: "Ruby",
     },
     cardProjectBtn: "Seen Project",
-    cardId: "projectCard5"
+    cardId: "projectCard5",
   },
   {
     cardTitle: "Profetional Art <br> Printing Data",
@@ -105,8 +106,8 @@ const data = [
       cardBtn3: "Ruby",
     },
     cardProjectBtn: "Seen Project",
-    cardId: "projectCard6"
-  }
+    cardId: "projectCard6",
+  },
 ];
 
 const projectiSection = document.querySelector(
@@ -175,10 +176,7 @@ storyBtnDiv.appendChild(storyBtn2);
 storyBtnDiv.appendChild(storyBtn3);
 multiStoryDiv.appendChild(storyProjectBtn);
 
-
 // Project cards
-
-// console.log(cardProjectId)
 
 const projectCard1 = document.getElementById("projectCard1");
 const projectCard2 = document.getElementById("projectCard2");
@@ -195,13 +193,6 @@ const projectCard = [
   projectCard5,
   projectCard6,
 ];
-/*
-for (let cardNb = 0; cardNb < 1; cardNb += 1) {
-  cardsBuilder()
-}
-function cardsBuilder() {
-
-}*/
 
 for (let i = 0; i < projectCard.length; i += 1) {
   const cardSection = projectCard[i];
@@ -257,13 +248,7 @@ for (let i = 0; i < projectCard.length; i += 1) {
 }
 
 // popup window
-/*
-const openPopup1 = document.getElementById("see__project1");
-const openPopup2 = document.getElementById("see__project2");
-
-const openPopups = [openPopup1, openPopup2];  */
-
-const openPopups = document.querySelectorAll("button")
+const openPopups = document.querySelectorAll(".cardSection button");
 
 for (let popup = 0; popup < openPopups.length; popup += 1) {
   openPopups[popup].addEventListener("click", () => {
