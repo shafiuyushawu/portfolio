@@ -335,7 +335,12 @@ p {
     padding: 10px 15px;
   }
 
+  .descButton a {
+    margin: 0;
+    padding: 0;
+  }
+
   .seeLive {
-    padding: 15px 25px;
+    padding: 14px 18px;
   }
 }
