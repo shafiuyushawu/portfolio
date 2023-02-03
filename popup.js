@@ -45,7 +45,68 @@ const data = [
       cardBtn3: "Ruby",
     },
     cardProjectBtn: "Seen Project",
+    cardId: "projectCard1"
   },
+  {
+    cardTitle: "Profetional Art <br> Printing Data",
+    cardDescription:
+      "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
+    cardBtn: {
+      cardBtn1: "HTML",
+      cardBtn2: "Boostrap",
+      cardBtn3: "Ruby",
+    },
+    cardProjectBtn: "Seen Project",
+    cardId: "projectCard2"
+  },
+  {
+    cardTitle: "Profetional Art <br> Printing Data",
+    cardDescription:
+      "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
+    cardBtn: {
+      cardBtn1: "HTML",
+      cardBtn2: "Boostrap",
+      cardBtn3: "Ruby",
+    },
+    cardProjectBtn: "Seen Project",
+    cardId: "projectCard3"
+  },
+  {
+    cardTitle: "Profetional Art <br> Printing Data",
+    cardDescription:
+      "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
+    cardBtn: {
+      cardBtn1: "HTML",
+      cardBtn2: "Boostrap",
+      cardBtn3: "Ruby",
+    },
+    cardProjectBtn: "Seen Project",
+    cardId: "projectCard4"
+  },
+  {
+    cardTitle: "Profetional Art <br> Printing Data",
+    cardDescription:
+      "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
+    cardBtn: {
+      cardBtn1: "HTML",
+      cardBtn2: "Boostrap",
+      cardBtn3: "Ruby",
+    },
+    cardProjectBtn: "Seen Project",
+    cardId: "projectCard5"
+  },
+  {
+    cardTitle: "Profetional Art <br> Printing Data",
+    cardDescription:
+      "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
+    cardBtn: {
+      cardBtn1: "HTML",
+      cardBtn2: "Boostrap",
+      cardBtn3: "Ruby",
+    },
+    cardProjectBtn: "Seen Project",
+    cardId: "projectCard6"
+  }
 ];
 
 const projectiSection = document.querySelector(
@@ -114,6 +175,7 @@ storyBtnDiv.appendChild(storyBtn2);
 storyBtnDiv.appendChild(storyBtn3);
 multiStoryDiv.appendChild(storyProjectBtn);
 
+
 // Project cards
 
 // console.log(cardProjectId)
@@ -133,6 +195,13 @@ const projectCard = [
   projectCard5,
   projectCard6,
 ];
+/*
+for (let cardNb = 0; cardNb < 1; cardNb += 1) {
+  cardsBuilder()
+}
+function cardsBuilder() {
+
+}*/
 
 for (let i = 0; i < projectCard.length; i += 1) {
   const cardSection = projectCard[i];
@@ -188,11 +257,13 @@ for (let i = 0; i < projectCard.length; i += 1) {
 }
 
 // popup window
-
+/*
 const openPopup1 = document.getElementById("see__project1");
 const openPopup2 = document.getElementById("see__project2");
 
-const openPopups = [openPopup1, openPopup2];
+const openPopups = [openPopup1, openPopup2];  */
+
+const openPopups = document.querySelectorAll("button")
 
 for (let popup = 0; popup < openPopups.length; popup += 1) {
   openPopups[popup].addEventListener("click", () => {
