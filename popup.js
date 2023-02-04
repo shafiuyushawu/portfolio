@@ -364,7 +364,3 @@ for (let popup = 0; popup < openPopups.length; popup += 1) {
     });
   });
 }
-
-const contactMeForm = document.getElementById("contactMeForm");
-const contactMeEmail = document.getElementById("contactMeEmail");
-const contactMeError = document.getElementById("contactMeError");
