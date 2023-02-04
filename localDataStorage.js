@@ -4,12 +4,12 @@ const userEmailAddress = document.getElementById('contactMeEmail');
 const userMessage = document.getElementById('contactMeMessage');
 
 contactForm.addEventListener('change', () => {
-  const userDataObj = {
+  const userDataForm = {
     userName: userFullName.value,
     userEmail: userEmailAddress.value,
     userMsg: userMessage.value,
   };
-  const storeData = JSON.stringify(userDataObj);
+  const storeData = JSON.stringify(userDataForm);
   localStorage.setItem('userDetails', storeData);
 });
 
