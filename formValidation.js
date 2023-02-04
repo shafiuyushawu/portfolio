@@ -11,7 +11,7 @@ contactMeForm.addEventListener('submit', (e) => {
   } else {
     contactMeError.textContent = 'Invalid email address! Kindly enter with this format abcd@emgj.com';
     contactMeError.style.color = 'red';
-    contactMeError.style.fontSize = '25px';
-    contactMeError.style.textAlign = 'center';
+    contactMeError.style.fontSize = '20px';
+    contactMeError.style.textAlign = 'left';
   }
 });
