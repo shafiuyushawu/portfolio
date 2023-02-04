@@ -9,7 +9,7 @@ contactForm.addEventListener('change', () => {
     userEmail: userEmailAddress.value,
     userMsg: userMessage.value,
   };
-  const storeData = JSON.stringify(userDataObj);
+  const storeData = JSON.stringfy(userDataObj);
   localStorage.setItem('userDetails', storeData);
 });
 
@@ -18,4 +18,4 @@ const newStoreData = JSON.stringfy(newStoraData);
 
 userFullName.value = newStoreData.userName;
 userEmailAddress.value = newStoreData.userEmail;
-userMessage.value = newStoreData.userMsg;
+userMessage.value = newStoreData.useMsg;
