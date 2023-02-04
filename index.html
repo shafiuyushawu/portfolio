@@ -173,7 +173,7 @@
             like to chat please get in touch.
           </p>
           <form
-            id="form"
+            id="contactMeForm"
             action="https://formspree.io/f/mzbqzrnz"
             method="POST"
             class="contactme__content"
@@ -193,6 +193,7 @@
               <input
                 type="email"
                 name="email"
+                id="contactMeEmail"
                 placeholder="Email"
                 class="contactme__input"
                 required
@@ -212,6 +213,7 @@
                 maxlength="500"
               ></textarea>
             </div>
+            <span id="contactMeError"></span>
             <br />
             <div class="contactme__submit-container">
               <button class="contactme__submit-button" type="submit">
@@ -260,5 +262,6 @@
 
     <script src="./script.js"></script>
     <script src="./popup.js"></script>
+    <script src="./formValidation.js"></script>
   </body>
 </html>
