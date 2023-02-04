@@ -1,7 +1,7 @@
 const contactForm = document.getElementById('contactMeForm');
 const userFullName = document.getElementById('ContactMefullName');
 const userEmailAddress = document.getElementById('contactMeEmail');
-const userMessage = document.getElementById('contactMeMessage');
+const userMesage = document.getElementById('contactMeMessage');
 
 contactForm.addEventListener('change', () => {
   const userDataObj = {
@@ -14,7 +14,7 @@ contactForm.addEventListener('change', () => {
 });
 
 const newStoraData = localStorage.getItem('userDetails');
-const newStoreData = JSON.stringify(newStoraData);
+const newStoreData = JSON.stringfy(newStoraData);
 
 userFullName.value = newStoreData.userName;
 userEmailAddress.value = newStoreData.userEmail;
