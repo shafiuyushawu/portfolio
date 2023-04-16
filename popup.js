@@ -6,16 +6,16 @@ const body = document.querySelector(
 
 const data = [
   {
-    title: 'Multi-Post Stories',
+    title: "Space Traveler's Hub",
     techButton: {
-      tech1: 'html',
-      tech2: 'Boostrap',
-      tech3: 'Ruby on rails',
+      tech1: 'React',
+      tech2: 'Boostrap & Tailwind CSS',
+      tech3: 'Daisy UI',
     },
 
-    projImg: './icons_copy/Snapshoot Portfolio.svg',
+    projImg: './images/space.png',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+      'A single page web application that provides a platform for scientists to get booked for reservations and join missions to space travel.',
     descButton: {
       seeLive: {
         seeLiveTxt: 'See Live',
@@ -36,7 +36,7 @@ const data = [
     },
 
     story: {
-      storyImg: './icons_copy/ImgPlaceholder.svg',
+      storyImg: './images/space.png',
     },
 
     storyProjectBtn: 'See Project',
@@ -57,7 +57,7 @@ const data = [
   },
 
   {
-    cardTitle: 'Profetional Art <br> Printing Data',
+    cardTitle: 'Bookstore',
     cardDescription:
       "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
     cardBtn: {
@@ -71,7 +71,7 @@ const data = [
   },
 
   {
-    cardTitle: 'Profetional Art <br> Printing Data',
+    cardTitle: '',
     cardDescription:
       "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
     cardBtn: {
@@ -85,7 +85,7 @@ const data = [
   },
 
   {
-    cardTitle: 'Profetional Art <br> Printing Data',
+    cardTitle: '',
     cardDescription:
       "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
     cardBtn: {
@@ -99,7 +99,7 @@ const data = [
   },
 
   {
-    cardTitle: 'Profetional Art <br> Printing Data',
+    cardTitle: '',
     cardDescription:
       "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
     cardBtn: {
@@ -113,7 +113,7 @@ const data = [
   },
 
   {
-    cardTitle: 'Profetional Art <br> Printing Data',
+    cardTitle: '',
     cardDescription:
       "A daily selection of privatelys <br> personalized reads; no accounts or <br> sign-ups required. has been the <br> industry's standard",
     cardBtn: {
@@ -331,7 +331,7 @@ for (let popup = 0; popup < openPopups.length; popup += 1) {
     seeLiveLink.className = 'see__me_link';
     seeLiveLink.setAttribute(
       'href',
-      'https://shafiuyushawu.github.io/portfolio-/',
+      'https://space-travelers-hub-kcp2.onrender.com',
     );
 
     const seeLive = document.createElement('button');
@@ -346,7 +346,7 @@ for (let popup = 0; popup < openPopups.length; popup += 1) {
     seeSourceLink.className = 'see__me_link';
     seeSourceLink.setAttribute(
       'href',
-      'https://github.com/shafiuyushawu/portfolio-',
+      'https://github.com/shafiuyushawu/space-travelers',
     );
 
     const seeSource = document.createElement('button');
